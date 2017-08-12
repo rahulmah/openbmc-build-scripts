@@ -37,7 +37,7 @@ cp ${ROBOT_CODE_HOME}/*.xml ${HOME}/
 cp ${ROBOT_CODE_HOME}/*.html ${HOME}/
 if [ -d logs ] ; then
     tar -zcvf ${ROBOT_CODE_HOME}/logs/loop_test_result.tar.gz ${ROBOT_CODE_HOME}/logs ;
-    rm -Rf ${ROBOT_CODE_HOME}/2017*
+    rm -Rf ${ROBOT_CODE_HOME}/logs/2017* ;
     cp -Rf ${ROBOT_CODE_HOME}/logs ${HOME}/ ;
 fi
 
