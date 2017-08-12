@@ -36,7 +36,8 @@ export HTTPS_PORT=${HTTPS_PORT}
 cp ${ROBOT_CODE_HOME}/*.xml ${HOME}/
 cp ${ROBOT_CODE_HOME}/*.html ${HOME}/
 if [ -d logs ] ; then
-    cp -Rf ${ROBOT_CODE_HOME}/logs ${HOME}/ ;
+    tar -zcvf loop_test_result.tar.gz ${ROBOT_CODE_HOME}/logs ;
+    cp -Rf ${ROBOT_CODE_HOME}/logs/loop_test_result.tar.gz ${HOME}/ ;
 fi
 
 #rm -rf ${ROBOT_CODE_HOME}
